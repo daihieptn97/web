@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="java.js"></script>
+    <style>
+        .tb1, .tr {
+            display: table-row;
+        }
+
+        .tb1, .td {
+            display: table-cell;
+            padding: 10px;
+            border-top: 1px dashed gray;
+            vertical-align: middle;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="tbl">
+    <div class="tr">
+        <div class="td no-border"></div>
+        <div class="td no-border" style="text-align: center;vertical-align: top"><label>Lý thuyết thuật toán</label>
+        </div>
+        <div class="td no-border" style="text-align: center;vertical-align: top"><label>Nguyên lý các hệ điều
+            hành</label></div>
+        <div class="td no-border" style="text-align: center;vertical-align: top"><label>Toán rời rạc</label></div>
+        <div class="td no-border" style="text-align: center;vertical-align: top"><label>Phân tích thiết kế hệ
+            thống</label></div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Khi bắt đầu môn học, bạn có được thông báo về mục tiêu của môn
+            học</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="79;440;4">Hoàn toàn đồng ý</option>
+                <option value="79;439;3">Đồng ý</option>
+                <option value="79;438;2">Phân vân</option>
+                <option value="79;437;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="79;440;4">Hoàn toàn đồng ý</option>
+                <option value="79;439;3">Đồng ý</option>
+                <option value="79;438;2">Phân vân</option>
+                <option value="79;437;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="79;440;4">Hoàn toàn đồng ý</option>
+                <option value="79;439;3">Đồng ý</option>
+                <option value="79;438;2">Phân vân</option>
+                <option value="79;437;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="79;440;4">Hoàn toàn đồng ý</option>
+                <option value="79;439;3">Đồng ý</option>
+                <option value="79;438;2">Phân vân</option>
+                <option value="79;437;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Bạn được thông báo trước về phương pháp đánh giá kết quả môn
+            học</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="80;294;4">Hoàn toàn đồng ý</option>
+                <option value="80;293;3">Đồng ý</option>
+                <option value="80;292;2">Phân vân</option>
+                <option value="80;291;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="80;294;4">Hoàn toàn đồng ý</option>
+                <option value="80;293;3">Đồng ý</option>
+                <option value="80;292;2">Phân vân</option>
+                <option value="80;291;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="80;294;4">Hoàn toàn đồng ý</option>
+                <option value="80;293;3">Đồng ý</option>
+                <option value="80;292;2">Phân vân</option>
+                <option value="80;291;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="80;294;4">Hoàn toàn đồng ý</option>
+                <option value="80;293;3">Đồng ý</option>
+                <option value="80;292;2">Phân vân</option>
+                <option value="80;291;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Nội dung môn học liên quan trực tiếp đến mục tiêu của môn
+            học</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="81;298;4">Hoàn toàn đồng ý</option>
+                <option value="81;297;3">Đồng ý</option>
+                <option value="81;296;2">Phân vân</option>
+                <option value="81;295;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="81;298;4">Hoàn toàn đồng ý</option>
+                <option value="81;297;3">Đồng ý</option>
+                <option value="81;296;2">Phân vân</option>
+                <option value="81;295;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="81;298;4">Hoàn toàn đồng ý</option>
+                <option value="81;297;3">Đồng ý</option>
+                <option value="81;296;2">Phân vân</option>
+                <option value="81;295;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="81;298;4">Hoàn toàn đồng ý</option>
+                <option value="81;297;3">Đồng ý</option>
+                <option value="81;296;2">Phân vân</option>
+                <option value="81;295;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Trình tự sắp xếp nội dung các bài giảng phù hợp và logic</label>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="82;302;4">Hoàn toàn đồng ý</option>
+                <option value="82;301;3">Đồng ý</option>
+                <option value="82;300;2">Phân vân</option>
+                <option value="82;299;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="82;302;4">Hoàn toàn đồng ý</option>
+                <option value="82;301;3">Đồng ý</option>
+                <option value="82;300;2">Phân vân</option>
+                <option value="82;299;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="82;302;4">Hoàn toàn đồng ý</option>
+                <option value="82;301;3">Đồng ý</option>
+                <option value="82;300;2">Phân vân</option>
+                <option value="82;299;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="82;302;4">Hoàn toàn đồng ý</option>
+                <option value="82;301;3">Đồng ý</option>
+                <option value="82;300;2">Phân vân</option>
+                <option value="82;299;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Các tài liệu môn học cập nhật kiến thức và kỹ năng mới
+            nhất</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="83;306;4">Hoàn toàn đồng ý</option>
+                <option value="83;305;3">Đồng ý</option>
+                <option value="83;304;2">Phân vân</option>
+                <option value="83;303;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="83;306;4">Hoàn toàn đồng ý</option>
+                <option value="83;305;3">Đồng ý</option>
+                <option value="83;304;2">Phân vân</option>
+                <option value="83;303;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="83;306;4">Hoàn toàn đồng ý</option>
+                <option value="83;305;3">Đồng ý</option>
+                <option value="83;304;2">Phân vân</option>
+                <option value="83;303;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="83;306;4">Hoàn toàn đồng ý</option>
+                <option value="83;305;3">Đồng ý</option>
+                <option value="83;304;2">Phân vân</option>
+                <option value="83;303;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Bạn có đủ thời gian trên lớp để hiểu những vấn đề truyền
+            tải</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="84;310;4">Hoàn toàn đồng ý</option>
+                <option value="84;309;3">Đồng ý</option>
+                <option value="84;308;2">Phân vân</option>
+                <option value="84;307;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="84;310;4">Hoàn toàn đồng ý</option>
+                <option value="84;309;3">Đồng ý</option>
+                <option value="84;308;2">Phân vân</option>
+                <option value="84;307;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="84;310;4">Hoàn toàn đồng ý</option>
+                <option value="84;309;3">Đồng ý</option>
+                <option value="84;308;2">Phân vân</option>
+                <option value="84;307;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="84;310;4">Hoàn toàn đồng ý</option>
+                <option value="84;309;3">Đồng ý</option>
+                <option value="84;308;2">Phân vân</option>
+                <option value="84;307;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Môn học mang tính thực tiễn cao</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="85;314;4">Hoàn toàn đồng ý</option>
+                <option value="85;313;3">Đồng ý</option>
+                <option value="85;312;2">Phân vân</option>
+                <option value="85;311;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="85;314;4">Hoàn toàn đồng ý</option>
+                <option value="85;313;3">Đồng ý</option>
+                <option value="85;312;2">Phân vân</option>
+                <option value="85;311;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="85;314;4">Hoàn toàn đồng ý</option>
+                <option value="85;313;3">Đồng ý</option>
+                <option value="85;312;2">Phân vân</option>
+                <option value="85;311;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="85;314;4">Hoàn toàn đồng ý</option>
+                <option value="85;313;3">Đồng ý</option>
+                <option value="85;312;2">Phân vân</option>
+                <option value="85;311;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Môn học góp phần trang bị kiến thức và kỹ năng nghề nghiệp cho
+            bạn</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="86;318;4">Hoàn toàn đồng ý</option>
+                <option value="86;317;3">Đồng ý</option>
+                <option value="86;316;2">Phân vân</option>
+                <option value="86;315;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="86;318;4">Hoàn toàn đồng ý</option>
+                <option value="86;317;3">Đồng ý</option>
+                <option value="86;316;2">Phân vân</option>
+                <option value="86;315;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="86;318;4">Hoàn toàn đồng ý</option>
+                <option value="86;317;3">Đồng ý</option>
+                <option value="86;316;2">Phân vân</option>
+                <option value="86;315;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="86;318;4">Hoàn toàn đồng ý</option>
+                <option value="86;317;3">Đồng ý</option>
+                <option value="86;316;2">Phân vân</option>
+                <option value="86;315;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Khi bắt đầu môn học giảng viên có thông báo cho bạn biết cần
+            chuẩn bị như thế nào cho môn học này</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="88;326;4">Hoàn toàn đồng ý</option>
+                <option value="88;325;3">Đồng ý</option>
+                <option value="88;324;2">Phân vân</option>
+                <option value="88;323;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="88;326;4">Hoàn toàn đồng ý</option>
+                <option value="88;325;3">Đồng ý</option>
+                <option value="88;324;2">Phân vân</option>
+                <option value="88;323;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="88;326;4">Hoàn toàn đồng ý</option>
+                <option value="88;325;3">Đồng ý</option>
+                <option value="88;324;2">Phân vân</option>
+                <option value="88;323;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="88;326;4">Hoàn toàn đồng ý</option>
+                <option value="88;325;3">Đồng ý</option>
+                <option value="88;324;2">Phân vân</option>
+                <option value="88;323;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên truyền tải nội dung rõ ràng dễ hiểu</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="89;330;4">Hoàn toàn đồng ý</option>
+                <option value="89;329;3">Đồng ý</option>
+                <option value="89;328;2">Phân vân</option>
+                <option value="89;327;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="89;330;4">Hoàn toàn đồng ý</option>
+                <option value="89;329;3">Đồng ý</option>
+                <option value="89;328;2">Phân vân</option>
+                <option value="89;327;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="89;330;4">Hoàn toàn đồng ý</option>
+                <option value="89;329;3">Đồng ý</option>
+                <option value="89;328;2">Phân vân</option>
+                <option value="89;327;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="89;330;4">Hoàn toàn đồng ý</option>
+                <option value="89;329;3">Đồng ý</option>
+                <option value="89;328;2">Phân vân</option>
+                <option value="89;327;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên kết hợp nhiều phương pháp giảng dạy và các hoạt động
+            khác nhau để giúp bạn học có hiệu quả</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="90;334;4">Hoàn toàn đồng ý</option>
+                <option value="90;333;3">Đồng ý</option>
+                <option value="90;332;2">Phân vân</option>
+                <option value="90;331;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="90;334;4">Hoàn toàn đồng ý</option>
+                <option value="90;333;3">Đồng ý</option>
+                <option value="90;332;2">Phân vân</option>
+                <option value="90;331;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="90;334;4">Hoàn toàn đồng ý</option>
+                <option value="90;333;3">Đồng ý</option>
+                <option value="90;332;2">Phân vân</option>
+                <option value="90;331;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="90;334;4">Hoàn toàn đồng ý</option>
+                <option value="90;333;3">Đồng ý</option>
+                <option value="90;332;2">Phân vân</option>
+                <option value="90;331;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Phương pháp giảng dạy của giảng viên giúp bạn có tư duy phê phán
+            hoặc sáng tạo hơn trong suy nghĩ</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="91;338;4">Hoàn toàn đồng ý</option>
+                <option value="91;337;3">Đồng ý</option>
+                <option value="91;336;2">Phân vân</option>
+                <option value="91;335;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="91;338;4">Hoàn toàn đồng ý</option>
+                <option value="91;337;3">Đồng ý</option>
+                <option value="91;336;2">Phân vân</option>
+                <option value="91;335;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="91;338;4">Hoàn toàn đồng ý</option>
+                <option value="91;337;3">Đồng ý</option>
+                <option value="91;336;2">Phân vân</option>
+                <option value="91;335;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="91;338;4">Hoàn toàn đồng ý</option>
+                <option value="91;337;3">Đồng ý</option>
+                <option value="91;336;2">Phân vân</option>
+                <option value="91;335;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên tạo cơ hội cho các bạn chủ động tham gia vào quá
+            trình học trong và ngoài lớp</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="92;342;4">Hoàn toàn đồng ý</option>
+                <option value="92;341;3">Đồng ý</option>
+                <option value="92;340;2">Phân vân</option>
+                <option value="92;339;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="92;342;4">Hoàn toàn đồng ý</option>
+                <option value="92;341;3">Đồng ý</option>
+                <option value="92;340;2">Phân vân</option>
+                <option value="92;339;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="92;342;4">Hoàn toàn đồng ý</option>
+                <option value="92;341;3">Đồng ý</option>
+                <option value="92;340;2">Phân vân</option>
+                <option value="92;339;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="92;342;4">Hoàn toàn đồng ý</option>
+                <option value="92;341;3">Đồng ý</option>
+                <option value="92;340;2">Phân vân</option>
+                <option value="92;339;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên khích lệ bạn đặt câu hỏi và thảo luận các quan điểm,
+            các phương pháp tiếp cận để hiểu sâu nội dung bài học</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="93;346;4">Hoàn toàn đồng ý</option>
+                <option value="93;345;3">Đồng ý</option>
+                <option value="93;344;2">Phân vân</option>
+                <option value="93;343;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="93;346;4">Hoàn toàn đồng ý</option>
+                <option value="93;345;3">Đồng ý</option>
+                <option value="93;344;2">Phân vân</option>
+                <option value="93;343;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="93;346;4">Hoàn toàn đồng ý</option>
+                <option value="93;345;3">Đồng ý</option>
+                <option value="93;344;2">Phân vân</option>
+                <option value="93;343;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="93;346;4">Hoàn toàn đồng ý</option>
+                <option value="93;345;3">Đồng ý</option>
+                <option value="93;344;2">Phân vân</option>
+                <option value="93;343;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Kỹ năng giảng dạy của giảng viên rèn luyện cho bạn phương pháp
+            suy luận liên hệ các vấn đề trong môn học với thực tiễn</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="94;350;4">Hoàn toàn đồng ý</option>
+                <option value="94;349;3">Đồng ý</option>
+                <option value="94;348;2">Phân vân</option>
+                <option value="94;347;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="94;350;4">Hoàn toàn đồng ý</option>
+                <option value="94;349;3">Đồng ý</option>
+                <option value="94;348;2">Phân vân</option>
+                <option value="94;347;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="94;350;4">Hoàn toàn đồng ý</option>
+                <option value="94;349;3">Đồng ý</option>
+                <option value="94;348;2">Phân vân</option>
+                <option value="94;347;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="94;350;4">Hoàn toàn đồng ý</option>
+                <option value="94;349;3">Đồng ý</option>
+                <option value="94;348;2">Phân vân</option>
+                <option value="94;347;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên sử dụng giáo trình và tài liệu tham khảo giúp bạn
+            hiểu rõ hơn hoặc mở rộng hiểu biết nội dung môn học</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="95;354;4">Hoàn toàn đồng ý</option>
+                <option value="95;353;3">Đồng ý</option>
+                <option value="95;352;2">Phân vân</option>
+                <option value="95;351;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="95;354;4">Hoàn toàn đồng ý</option>
+                <option value="95;353;3">Đồng ý</option>
+                <option value="95;352;2">Phân vân</option>
+                <option value="95;351;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="95;354;4">Hoàn toàn đồng ý</option>
+                <option value="95;353;3">Đồng ý</option>
+                <option value="95;352;2">Phân vân</option>
+                <option value="95;351;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="95;354;4">Hoàn toàn đồng ý</option>
+                <option value="95;353;3">Đồng ý</option>
+                <option value="95;352;2">Phân vân</option>
+                <option value="95;351;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên đưa ra các hoạt động và các yêu cầu về bài tập,
+            nghiên cứu để giúp bạn đạt được mục tiêu môn học</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="96;358;4">Hoàn toàn đồng ý</option>
+                <option value="96;357;3">Đồng ý</option>
+                <option value="96;356;2">Phân vân</option>
+                <option value="96;355;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="96;358;4">Hoàn toàn đồng ý</option>
+                <option value="96;357;3">Đồng ý</option>
+                <option value="96;356;2">Phân vân</option>
+                <option value="96;355;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="96;358;4">Hoàn toàn đồng ý</option>
+                <option value="96;357;3">Đồng ý</option>
+                <option value="96;356;2">Phân vân</option>
+                <option value="96;355;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="96;358;4">Hoàn toàn đồng ý</option>
+                <option value="96;357;3">Đồng ý</option>
+                <option value="96;356;2">Phân vân</option>
+                <option value="96;355;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên nhiệt tình trong giảng dạy</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="97;362;4">Hoàn toàn đồng ý</option>
+                <option value="97;361;3">Đồng ý</option>
+                <option value="97;360;2">Phân vân</option>
+                <option value="97;359;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="97;362;4">Hoàn toàn đồng ý</option>
+                <option value="97;361;3">Đồng ý</option>
+                <option value="97;360;2">Phân vân</option>
+                <option value="97;359;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="97;362;4">Hoàn toàn đồng ý</option>
+                <option value="97;361;3">Đồng ý</option>
+                <option value="97;360;2">Phân vân</option>
+                <option value="97;359;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="97;362;4">Hoàn toàn đồng ý</option>
+                <option value="97;361;3">Đồng ý</option>
+                <option value="97;360;2">Phân vân</option>
+                <option value="97;359;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên giao tiếp với thái độ lịch sự</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="99;370;4">Hoàn toàn đồng ý</option>
+                <option value="99;369;3">Đồng ý</option>
+                <option value="99;368;2">Phân vân</option>
+                <option value="99;367;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="99;370;4">Hoàn toàn đồng ý</option>
+                <option value="99;369;3">Đồng ý</option>
+                <option value="99;368;2">Phân vân</option>
+                <option value="99;367;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="99;370;4">Hoàn toàn đồng ý</option>
+                <option value="99;369;3">Đồng ý</option>
+                <option value="99;368;2">Phân vân</option>
+                <option value="99;367;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="99;370;4">Hoàn toàn đồng ý</option>
+                <option value="99;369;3">Đồng ý</option>
+                <option value="99;368;2">Phân vân</option>
+                <option value="99;367;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên là nguồn tư vấn cho sinh viên trong học thuật và
+            hướng nghiệp</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="100;374;4">Hoàn toàn đồng ý</option>
+                <option value="100;373;3">Đồng ý</option>
+                <option value="100;372;2">Phân vân</option>
+                <option value="100;371;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="100;374;4">Hoàn toàn đồng ý</option>
+                <option value="100;373;3">Đồng ý</option>
+                <option value="100;372;2">Phân vân</option>
+                <option value="100;371;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="100;374;4">Hoàn toàn đồng ý</option>
+                <option value="100;373;3">Đồng ý</option>
+                <option value="100;372;2">Phân vân</option>
+                <option value="100;371;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="100;374;4">Hoàn toàn đồng ý</option>
+                <option value="100;373;3">Đồng ý</option>
+                <option value="100;372;2">Phân vân</option>
+                <option value="100;371;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên theo đúng trình tự chương trình môn học như hướng dẫn
+            ban đầu</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="101;378;4">Hoàn toàn đồng ý</option>
+                <option value="101;377;3">Đồng ý</option>
+                <option value="101;376;2">Phân vân</option>
+                <option value="101;375;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="101;378;4">Hoàn toàn đồng ý</option>
+                <option value="101;377;3">Đồng ý</option>
+                <option value="101;376;2">Phân vân</option>
+                <option value="101;375;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="101;378;4">Hoàn toàn đồng ý</option>
+                <option value="101;377;3">Đồng ý</option>
+                <option value="101;376;2">Phân vân</option>
+                <option value="101;375;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="101;378;4">Hoàn toàn đồng ý</option>
+                <option value="101;377;3">Đồng ý</option>
+                <option value="101;376;2">Phân vân</option>
+                <option value="101;375;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Giảng viên tận dụng hết thười gian quy định cho môn học</label>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="102;382;4">Hoàn toàn đồng ý</option>
+                <option value="102;381;3">Đồng ý</option>
+                <option value="102;380;2">Phân vân</option>
+                <option value="102;379;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="102;382;4">Hoàn toàn đồng ý</option>
+                <option value="102;381;3">Đồng ý</option>
+                <option value="102;380;2">Phân vân</option>
+                <option value="102;379;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="102;382;4">Hoàn toàn đồng ý</option>
+                <option value="102;381;3">Đồng ý</option>
+                <option value="102;380;2">Phân vân</option>
+                <option value="102;379;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="102;382;4">Hoàn toàn đồng ý</option>
+                <option value="102;381;3">Đồng ý</option>
+                <option value="102;380;2">Phân vân</option>
+                <option value="102;379;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Bạn muốn tham gia vào môn học khác do giảng viên này giảng
+            dạy</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="103;386;4">Hoàn toàn đồng ý</option>
+                <option value="103;385;3">Đồng ý</option>
+                <option value="103;384;2">Phân vân</option>
+                <option value="103;383;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="103;386;4">Hoàn toàn đồng ý</option>
+                <option value="103;385;3">Đồng ý</option>
+                <option value="103;384;2">Phân vân</option>
+                <option value="103;383;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="103;386;4">Hoàn toàn đồng ý</option>
+                <option value="103;385;3">Đồng ý</option>
+                <option value="103;384;2">Phân vân</option>
+                <option value="103;383;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="103;386;4">Hoàn toàn đồng ý</option>
+                <option value="103;385;3">Đồng ý</option>
+                <option value="103;384;2">Phân vân</option>
+                <option value="103;383;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Phương pháp kiểm tra phù hợp với tính chất, đặc điểm của môn
+            học</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="105;394;4">Hoàn toàn đồng ý</option>
+                <option value="105;393;3">Đồng ý</option>
+                <option value="105;392;2">Phân vân</option>
+                <option value="105;391;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="105;394;4">Hoàn toàn đồng ý</option>
+                <option value="105;393;3">Đồng ý</option>
+                <option value="105;392;2">Phân vân</option>
+                <option value="105;391;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="105;394;4">Hoàn toàn đồng ý</option>
+                <option value="105;393;3">Đồng ý</option>
+                <option value="105;392;2">Phân vân</option>
+                <option value="105;391;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="105;394;4">Hoàn toàn đồng ý</option>
+                <option value="105;393;3">Đồng ý</option>
+                <option value="105;392;2">Phân vân</option>
+                <option value="105;391;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Các bài viết kiểm tra được giáo viên nhận xét rõ ràng, hữu ích
+            cho bạn</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="106;398;4">Hoàn toàn đồng ý</option>
+                <option value="106;397;3">Đồng ý</option>
+                <option value="106;396;2">Phân vân</option>
+                <option value="106;395;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="106;398;4">Hoàn toàn đồng ý</option>
+                <option value="106;397;3">Đồng ý</option>
+                <option value="106;396;2">Phân vân</option>
+                <option value="106;395;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="106;398;4">Hoàn toàn đồng ý</option>
+                <option value="106;397;3">Đồng ý</option>
+                <option value="106;396;2">Phân vân</option>
+                <option value="106;395;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="106;398;4">Hoàn toàn đồng ý</option>
+                <option value="106;397;3">Đồng ý</option>
+                <option value="106;396;2">Phân vân</option>
+                <option value="106;395;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Bài kiểm tra hết môn đã đánh giá tổng hợp kiến thức, kỹ năng cần
+            thiết mà sinh viên cần đạt được khi hoàn thành môn học</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="107;402;4">Hoàn toàn đồng ý</option>
+                <option value="107;401;3">Đồng ý</option>
+                <option value="107;400;2">Phân vân</option>
+                <option value="107;399;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="107;402;4">Hoàn toàn đồng ý</option>
+                <option value="107;401;3">Đồng ý</option>
+                <option value="107;400;2">Phân vân</option>
+                <option value="107;399;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="107;402;4">Hoàn toàn đồng ý</option>
+                <option value="107;401;3">Đồng ý</option>
+                <option value="107;400;2">Phân vân</option>
+                <option value="107;399;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="107;402;4">Hoàn toàn đồng ý</option>
+                <option value="107;401;3">Đồng ý</option>
+                <option value="107;400;2">Phân vân</option>
+                <option value="107;399;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td" style="min-width: 300px"><label>Kết thúc môn học giảng viên có thông báo trên lớp cho bạn điểm
+            kiểm tra và điểm chuyên cần</label></div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ALT221" name="vote-ALT221" style="width: 126px;">
+                <option value="lựa chọn"></option>
+                <option value="108;406;4">Hoàn toàn đồng ý</option>
+                <option value="108;405;3">Đồng ý</option>
+                <option value="108;404;2">Phân vân</option>
+                <option value="108;403;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-POS221" name="vote-POS221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="108;406;4">Hoàn toàn đồng ý</option>
+                <option value="108;405;3">Đồng ý</option>
+                <option value="108;404;2">Phân vân</option>
+                <option value="108;403;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-DEM221" name="vote-DEM221" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="108;406;4">Hoàn toàn đồng ý</option>
+                <option value="108;405;3">Đồng ý</option>
+                <option value="108;404;2">Phân vân</option>
+                <option value="108;403;1">Không đồng ý</option>
+            </select>
+        </div>
+        <div class="td">
+            <select class="form-control m-0-a options-vote vote-ASD232" name="vote-ASD232" style="width: 126px;">
+                <option value="">Lựa chọn</option>
+                <option value="108;406;4">Hoàn toàn đồng ý</option>
+                <option value="108;405;3">Đồng ý</option>
+                <option value="108;404;2">Phân vân</option>
+                <option value="108;403;1">Không đồng ý</option>
+            </select>
+        </div>
+    </div>
+    <div class="tr">
+        <div class="td"></div>
+        <div class="td" style="text-align: center">
+            <button type="submit" class="btn btn-primary vote-action" data-to="vote-ALT221"
+                    data-link="http://voting.tnu.vn/voting/?StudentId%20=%20af93f6aebd62446094b79b7f00efb21d&amp;CourseId%20=%20416C4E1CBACE49D897AA5E97E0AFF69B&amp;UniCode%20=%20DHTNKCNTT&amp;String%20=%20ARFRDMTU1RDQ4MDEwMzAwMTM6OlRy4bqnbiDEkOG6oWkgIEhp4buHcHx8RDIxMEMxNzA3LjAwOTE6OsSQw6BvIFRo4buLIFRodXx8QUxUMjIxOjpMw70gdGh1eeG6v3QgdGh14bqtdCB0b8Ohbnx8MjAxNl8yMDE3XzJ8fDYuNQ==">
+                Đánh giá
+            </button>
+        </div>
+        <div class="td" style="text-align: center">
+            <button type="submit" class="btn btn-primary vote-action" data-to="vote-POS221"
+                    data-link="http://voting.tnu.vn/voting/?StudentId%20=%20af93f6aebd62446094b79b7f00efb21d&amp;CourseId%20=%20E3B19C8D20B848EEA6D255CE8425261E&amp;UniCode%20=%20DHTNKCNTT&amp;String%20=%20ARFRDMTU1RDQ4MDEwMzAwMTM6OlRy4bqnbiDEkOG6oWkgIEhp4buHcHx8RDIxMEMxNTA3LjAxMzQ6OlBo4bqhbSBUaOG7iyBMacOqbnx8UE9TMjIxOjpOZ3V5w6puIGzDvSBjw6FjIGjhu4cgxJFp4buBdSBow6BuaHx8MjAxNl8yMDE3XzJ8fDUuNQ==">
+                Đánh giá
+            </button>
+        </div>
+        <div class="td" style="text-align: center">
+            <button type="submit" class="btn btn-primary vote-action" data-to="vote-DEM221"
+                    data-link="http://voting.tnu.vn/voting/?StudentId%20=%20af93f6aebd62446094b79b7f00efb21d&amp;CourseId%20=%203AED6B6668B14AE394E88FC36841A9C3&amp;UniCode%20=%20DHTNKCNTT&amp;String%20=%20ARFRDMTU1RDQ4MDEwMzAwMTM6OlRy4bqnbiDEkOG6oWkgIEhp4buHcHx8SFRUVC4yMDEzLjAyOjpI4buTIFRo4buLIFR1eeG6v258fEFTRDIzMjo6UGjDom4gdMOtY2ggdGhp4bq/dCBr4bq/IGjhu4cgdGjhu5FuZ3x8MjAxNl8yMDE3XzJ8fDcuNw==">
+                Đánh giá
+            </button>
+        </div>
+        <div class="td" style="text-align: center">
+            <button type="submit" class="btn btn-primary vote-action" data-to="vote-ASD232"
+                    data-link="http://voting.tnu.vn/voting/?StudentId%20=%20af93f6aebd62446094b79b7f00efb21d&amp;CourseId%20=%205E2574A65F204904BEA5E196288E2E7C&amp;UniCode%20=%20DHTNKCNTT&amp;String%20=%20ARFRDMTU1RDQ4MDEwMzAwMTM6OlRy4bqnbiDEkOG6oWkgIEhp4buHcHx8RDIxMEMxNzA3LjIwOTc6Ok5ndXnhu4VuIFRo4buLIFRoYW5oIFTDom18fERFTTIyMTo6VG/DoW4gcuG7nWkgcuG6oWN8fDIwMTZfMjAxN18yfHw2LjU=">
+                Đánh giá
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
